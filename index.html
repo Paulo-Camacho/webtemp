@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>HCI Lab @ California State University</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800%7COpen+Sans+Condensed:300&amp;subset=latin,cyrillic"
+          rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/css/screen.min.css">
+    <link rel="stylesheet" href="/css/custom.min.css">
+    <script src="/js/head.min.js"></script>
+</head>
+<body>
+<script>
+    progressJs().setOptions({
+        overlayMode: true,
+        theme: 'custom'
+    }).start();
+    if (window.attachEvent) {
+        window.attachEvent('onload', function () {
+            progressJs().end();
+        });
+    } else {
+        if (window.onload) {
+            var curronload = window.onload;
+            var newonload = function () {
+                curronload();
+                progressJs().end();
+            };
+            window.onload = newonload;
+        } else {
+            window.onload = function () {
+                progressJs().end();
+            };
+        }
+    }
+</script>
+<!-- Header-->
+<header class="main-header">
+    <div class="first-nav">
+        <div class="container">
+            <nav class="first-nav__links">
+                <ul>
+                    <li>
+                        <a class="is-selected">english</a>
+                    </li>
+                    <li>
+                        <a href="#">spanish</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="first-nav__navcontrol icon icon_menu js-navcontrol" href="#">Menu</a>
+        </div>
+    </div>
+    <div class="second-nav js-nav">
+        <div class="container">
+            <a class="second-nav__logo">
+                <span>PHP</span>
+            </a>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a class="js-link js-anchor is-selected" href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a class="js-link js-anchor" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="js-link js-anchor" href="#process">Process</a>
+                    </li>
+                    <li>
+                        <a class="js-link js-anchor" href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a class="js-link js-anchor" href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a class="js-link js-anchor" href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<!-- Home section-->
+<section class="home-section" id="home">
+    <div class="home-section__bg"></div>
+    <div class="home-section__overlay">
+        <div class="container">
+            <header class="home-section__header">
+                <h1>Poly Hanoi Project</h1>
+                <h2>A Cal Poly SLO Project</h2>
+            </header>
+        </div>
+    </div>
+</section>
+<!-- About section-->
+<section class="about-section" id="about">
+    <div class="container">
+        <div class="about-card">
+            <header class="about-card__header">
+                <h2>About our Project</h2>
+                <h4>Curabitur accumsan nulla ut velit facilisis</h4>
+            </header>
+            <div class="about-card__info">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lacinia nulla vel ornare interdum.
+                    Donec posuere leo ut justo imperdiet, ut congue lorem faucibus. Aliquam fringilla felis at est
+                    tincidunt efficitur. Phasellus enim ipsum, porttitor et urna ac, finibus finibus eros.</p>
+                <blockquote>
+                    <p>Donec non tincidunt massa. Vestibulum vel ultrices velit. Integer eget nibh vitae velit
+                        condimentum viverra vel eget diam. Ut facilisis finibus nisi ac feugiat. Nullam consectetur
+                        neque in est posuere feugiat et nec arcu. Pellentesque sit amet sapien lorem.</p>
+                </blockquote>
+                <p>Nunc non venenatis odio. Nullam id neque et lectus suscipit mattis ac a ante. Suspendisse potenti.
+                    Aliquam in nulla sem. Vivamus sodales malesuada leo, sit amet cursus nunc vulputate aliquet. Proin
+                    porttitor ex facilisis aliquam efficitur. Vestibulum scelerisque nisl ac ex rutrum, quis aliquet
+                    nibh ultrices.</p>
+                <p class="about-card__info-status">
+                    <span>Current status:</span>
+                    Available for hire
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Process section-->
+<section class="common-section" id="process">
+    <div class="container">
+        <header class="common-section__header">
+            <h2>How it works</h2>
+            <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquam interdum tortor</h4>
+        </header>
+        <div class="grid-container">
+            <ul class="process">
+                <li class="process__step process__step_research">
+                    <div class="process__step-icon icon icon_research is-active"></div>
+                </li>
+                <li class="process__step-info process__step-info_research is-active">
+                    <h3>
+                        <span>Step 1</span>
+                        &mdash; Redefining The Tower of Hanoi
+                    </h3>
+                    <p>The Tower of Hanoi is a relatively simple puzzle with simple rules... Unless you're like us and change 
+                        the rules slightly so that you're only allowed to move the objects with your mind! </p>
+                </li>
+                <li class="process__step process__step_develop">
+                    <div class="process__step-icon icon icon_develop"></div>
+                </li>
+                <li class="process__step-info process__step-info_develop">
+                    <h3>
+                        <span>Step 2</span>
+                        &mdash; How do we do it?
+                    </h3>
+                    <p>Some might call it cheating, but we're engineers so we call it using our head. Specifically we will use 
+                        our head with an EEG headset, which detects brain waves, and use code to relay those instructions to 
+                        a robot arm to solve the puzzle. 
+                    </p>
+                </li>
+                <li class="process__step process__step_deploy">
+                    <div class="process__step-icon icon icon_deploy"></div>
+                </li>
+                <li class="process__step-info process__step-info_deploy">
+                    <h3>
+                        <span>Step 3</span>
+                        &mdash; Let's Break it Down
+                    </h3>
+                    <p>break down how we will seperate the steps of the process,"While this may seem simple enough, it's actually a lot
+                        of work so we seperate the project into a few basic pieces. 1:camera 2:arm 3:headset 4:algorithms"
+                    </p>
+                </li>
+                <li class="process__step process__step_deliver">
+                    <div class="process__step-icon icon icon_deliver"></div>
+                </li>
+                <li class="process__step-info process__step-info_deliver">
+                    <h3>
+                        <span>Step 4</span>
+                        &mdash; Let's Think Bigger
+                    </h3>
+                    <p>make some sentences about what this project implies; prosthetics, unmanned missions,
+                        safety for trade jobs,work from home, blah bla blah
+
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- Projects section-->
+<section class="common-section" id="projects">
+    <header class="common-section__header">
+        <h2>Projects</h2>
+        <p>Donec lorem ante, efficitur ut blandit eu, sollicitudin sed mi</p>
+    </header>
+    <div class="projects-wrap">
+        <div class="grid-container">
+            <div class="projects">
+                <figure class="projects__item">
+                    <img src="static/images/projects/1.jpg"
+                         alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+                    <figcaption>
+                        <a class="icon icon_link" href="#" rel="nofollow">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit</a>
+                    </figcaption>
+                </figure>
+                <figure class="projects__item">
+                    <img src="static/images/projects/2.jpg" alt="Donec lobortis, est iaculis rutrum feugiat">
+                    <figcaption>
+                        <a class="icon icon_link" href="#" rel="nofollow">Donec lobortis, est iaculis rutrum feugiat</a>
+                    </figcaption>
+                </figure>
+                <figure class="projects__item">
+                    <img src="static/images/projects/5.jpg"
+                         alt="Duis feugiat, metus eu ullamcorper accumsan, massa risus dictum nisi">
+                    <figcaption>
+                        <a class="icon icon_link" href="#" rel="nofollow">Duis feugiat, metus eu ullamcorper accumsan,
+                            massa risus dictum nisi</a>
+                    </figcaption>
+                </figure>
+                <figure class="projects__item">
+                    <img src="static/images/projects/6.jpg"
+                         alt="Donec non ligula imperdiet, tincidunt quam ut, pellentesque nisi">
+                    <figcaption>
+                        <a class="icon icon_link" href="#" rel="nofollow">Donec non ligula imperdiet, tincidunt quam ut,
+                            pellentesque nisi</a>
+                    </figcaption>
+                </figure>
+                <figure class="projects__item">
+                    <img src="static/images/projects/3.jpg"
+                         alt="Mauris a sem semper, maximus metus vitae, efficitur turpis">
+                    <figcaption>
+                        <a class="icon icon_link" href="#" rel="nofollow">Mauris a sem semper, maximus metus vitae,
+                            efficitur turpis</a>
+                    </figcaption>
+                </figure>
+                <figure class="projects__item">
+                    <img src="static/images/projects/4.jpg" alt="Nunc sit amet massa id sem pretium luctus">
+                    <figcaption>
+                        <a class="icon icon_link" href="#" rel="nofollow">Nunc sit amet massa id sem pretium luctus</a>
+                    </figcaption>
+                </figure>
+                <figure class="projects__item">
+                    <img src="static/images/projects/7.jpg" alt="Nunc elementum arcu sit amet erat sodales fringilla">
+                    <figcaption>
+                        <a class="icon icon_link" href="#" rel="nofollow">Nunc elementum arcu sit amet erat sodales
+                            fringilla</a>
+                    </figcaption>
+                </figure>
+                <figure class="projects__item">
+                    <img src="static/images/projects/8.jpg" alt="Cras condimentum venenatis aliquet">
+                    <figcaption>
+                        <a class="icon icon_link" href="#" rel="nofollow">Cras condimentum venenatis aliquet</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- TEAM section-->
+<section class="common-section" id="team">
+    <div class="container">
+        <header class="common-section__header">
+            <h2>Team</h2>
+            <p>Our team consists of Cal Poly Professors, Students, and even Cuesta College Students hoping to transfer to Cal Poly!</p>
+        </header>
+        <div class="grid-container">
+            <ul class="team">
+                <li class="team__item">
+                    <img src="static/images/logos/placeholder.png" alt="Lorem ipsum dolor sit amet">
+                    <blockquote>
+                        <p class="icon icon_ql">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit
+                            orci est, id ultrices neque pretium quis. Quisque ut tortor eros. Curabitur id pellentesque
+                            dolor. Vivamus eu ullamcorper dolor, sit amet fringilla justo. Sed id eros interdum,
+                            ullamcorper diam ut, maximus lectus. Donec dapibus libero a euismod rutrum. Praesent at est
+                            ipsum.</p>
+                        <cite>
+                            <span class="name">Giles Posture,</span>
+                            <span class="role"> CompanyName</span>
+                        </cite>
+                    </blockquote>
+                </li>
+                <li class="team__item">
+                    <img src="static/images/logos/placeholder.png" alt="Lorem ipsum dolor sit amet">
+                    <blockquote>
+                        <p class="icon icon_ql">In imperdiet odio metus, at ultricies tellus posuere at. Sed tempor
+                            ipsum a rhoncus tempor. Praesent orci massa, congue ut sapien ac, commodo lobortis massa.
+                            Nam ultricies hendrerit arcu, quis lacinia metus dictum eget. Praesent eu nisi sapien. Proin
+                            posuere nec lacus vitae vehicula. Curabitur accumsan nulla ut velit facilisis, eu ultricies
+                            ligula tristique</p>
+                        <cite>
+                            <span class="name">Sue Shei,</span>
+                            <span class="role"> CompanyName</span>
+                        </cite>
+                    </blockquote>
+                </li>
+                <li class="team__item">
+                    <img src="static/images/logos/placeholder.png" alt="Lorem ipsum dolor sit amet">
+                    <blockquote>
+                        <p class="icon icon_ql">In imperdiet odio metus, at ultricies tellus posuere at.</p>
+                        <cite>
+                            <span class="name">Desmond Eagle,</span>
+                            <span class="role"> CompanyName</span>
+                        </cite>
+                    </blockquote>
+                </li>
+            </ul>
+            <ul class="team">
+                <li class="team__item">
+                    <img src="static/images/logos/placeholder.png" alt="Lorem ipsum dolor sit amet">
+                    <blockquote>
+                        <p class="icon icon_ql">Fusce aliquam lorem in ligula maximus, et fermentum velit ultricies. Sed
+                            quis pretium metus. Donec convallis pretium erat in varius. Sed ullamcorper, lacus vel
+                            euismod euismod, justo nibh tristique urna, ac sollicitudin nunc elit eget sem.</p>
+                        <cite>
+                            <span class="name">Benjamin Evalent,</span>
+                            <span class="role"> CompanyName</span>
+                        </cite>
+                    </blockquote>
+                </li>
+                <li class="team__item">
+                    <img src="static/images/logos/placeholder.png" alt="Lorem ipsum dolor sit amet">
+                    <blockquote>
+                        <p class="icon icon_ql">Nam vehicula ex vel justo suscipit feugiat. Praesent libero augue,
+                            consequat in blandit vel, blandit ac tortor. Sed quis pellentesque augue. Sed suscipit erat
+                            justo, quis maximus augue porttitor ut. Aliquam erat volutpat. Ut in leo risus. Nam pulvinar
+                            felis sit amet mi blandit, nec euismod augue tristique. Nulla at vestibulum massa.</p>
+                        <cite>
+                            <span class="name">Jake Weary,</span>
+                            <span class="role"> CompanyName</span>
+                        </cite>
+                    </blockquote>
+                </li>
+                <li class="team__item">
+                    <img src="static/images/logos/placeholder.png" alt="Lorem ipsum dolor sit amet">
+                    <blockquote>
+                        <p class="icon icon_ql">In imperdiet odio metus, at ultricies tellus posuere at. Sed tempor
+                            ipsum a rhoncus tempor. Praesent orci massa, congue ut sapien ac, commodo lobortis massa.
+                            Nam ultricies hendrerit arcu, quis lacinia metus dictum eget. Praesent eu nisi sapien. Proin
+                            posuere nec lacus vitae vehicula. Curabitur accumsan nulla ut velit facilisis, eu ultricies
+                            ligula tristique</p>
+                        <cite>
+                            <span class="name">Alberto Lara Cornejo,</span>
+                            <span class="role">"ADHD Incarnate"</span>
+                        </cite>
+                    </blockquote>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- Contacts section-->
+<div class="contacts-section" id="contacts">
+    <div class="container">
+        <section class="contact-card">
+            <header class="contact-card__header">
+                <h2>Contact information</h2>
+                <h4>Mauris leo nisl, malesuada id faucibus non, gravida sit amet lectus</h4>
+            </header>
+            <div class="contact-info">
+                <div class="contact-info__logo">PHP</div>
+                <div class="contact-info__group">
+                    <div class="contact-info__additional">
+                        <p>Donec lorem ante, efficitur?</p>
+                        <p>Sed aliquet sagittis odio commodo facilisis?</p>
+                        <p>Vivamus vel lacus tellus?</p>
+                    </div>
+                    <div class="contact-info__vcard vcard">
+                        <h4 class="fn org">John Doe</h4>
+                        <p class="role title">Project management consultant</p>
+                        <p class="icon icon_location">
+                            <a class="adr js-anchor" href="#gmap">
+                                <span class="country-name">CountryName</span>
+                                ,&nbsp;
+                                <span class="locality">CityName</span>
+                            </a>
+                        </p>
+                        <p class="icon icon_mail">
+                            <a class="email" href="john.doe@example.com">john.doe@example.com</a>
+                        </p>
+                        <p class="icon icon_phone">
+                            <a class="email" href="tel:1111111111">111-111-11-11</a>
+                        </p>
+                    </div>
+                    <ul class="contact-info__social">
+                        <li>
+                            <a class="icon icon_fb" rel="nofollow">I'm on Facebook</a>
+                        </li>
+                        <li>
+                            <a class="icon icon_twi" rel="nofollow">My Twitter</a>
+                        </li>
+                        <li>
+                            <a class="icon icon_gplus" rel="nofollow">I'm on Google+</a>
+                        </li>
+                        <li>
+                            <a class="icon icon_vk" rel="nofollow">I'm in Vk</a>
+                        </li>
+                        <li>
+                            <a class="icon icon_in" rel="nofollow">My Linkedin profile</a>
+                        </li>
+                        <li>
+                            <a class="icon icon_rss" rel="nofollow">RSS feed... maybe</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="gmap" id="gmap"></div>
+</div>
+<!-- Footer-->
+<footer class="main-footer">
+    <div class="container">
+        <p class="main-footer__copyright">
+            &copy;&nbsp;
+            <span>John Doe</span>
+        </p>
+        <a class="main-footer__gotop icon icon_gotop js-anchor" href="#home">To top!</a>
+    </div>
+</footer>
+<script src="/js/body.min.js"></script>
+</body>
+</html>
